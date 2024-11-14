@@ -1,25 +1,29 @@
+import React, { useEffect, useRef, useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import $ from 'jquery';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Heropanel from "./components/Heropanel";
+import './fonts/font.css'
+import './components/index.css'
+
+import Wanttostand from './components/Wanttostand';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
+import CustomCursor from './components/BallCursor';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          hey ritu here fgdfhf
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <CustomCursor />
+    <Heropanel />
+    <Wanttostand />
+    <ContactUs />
+    <Footer />
+    <button class="scale-on-hover">Hover me</button>
+
+    </>
   );
 }
 
