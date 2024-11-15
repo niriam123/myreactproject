@@ -21,8 +21,6 @@ function App() {
     <Wanttostand />
     <ContactUs />
     <Footer />
-    <button class="scale-on-hover">Hover me</button>
-
     </>
   );
 }
