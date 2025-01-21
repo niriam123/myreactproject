@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import $ from 'jquery';
 
 
@@ -39,7 +40,7 @@ const Navbar = () => {
       <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
-            <a className='nav-menu-link'>Agency</a>
+            <Link to="/Agency" className='nav-menu-link' smooth={true} duration={500}>Agency</Link>
             <a className='nav-menu-link'>Services</a>
             <a className='nav-menu-link'>Success Stories</a>
             <a className='nav-menu-link'>Careers</a>

@@ -1,27 +1,28 @@
 import React, { useEffect, useRef, useState } from 'react';
-import logo from './logo.svg';
-import $ from 'jquery';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { Link } from 'react-scroll';
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Heropanel from "./components/Heropanel";
 import './fonts/font.css'
 import './components/index.css'
 
-import Wanttostand from './components/Wanttostand';
-import ContactUs from './components/ContactUs';
-import Footer from './components/Footer';
-import CustomCursor from './components/BallCursor';
+import Home from './components/Home';
+import Agency from './components/Agency';
 
 function App() {
   
   return (
-    <>
-    <CustomCursor />
-    <Heropanel />
-    <Wanttostand />
-    <ContactUs />
-    <Footer />
-    </>
+    <Router>
+        
+        <Routes>
+        <Route path="/" element={<Home />} />  
+          <Route path="/Agency" element={<Agency />} />
+            {/* Redirect all other routes to the homepage */}
+        <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+  
+  </Router>
   );
 }
 
