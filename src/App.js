@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { Link } from 'react-scroll';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />  
           <Route path="/Agency" element={<Agency />} />
             {/* Redirect all other routes to the homepage */}
-        <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
   
   </Router>
