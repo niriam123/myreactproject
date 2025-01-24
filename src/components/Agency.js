@@ -6,6 +6,7 @@ import Footer from './Footer';
 // import AgencySlider from './AgencySlider';
 import AgencySlider from './AgencySlider';
 import JoinKromlin from './JoinKromlin';
+import WantToTeamKromlin from './WantToTeamKromlin';
 
 const Agency = () => {
 
@@ -310,6 +311,8 @@ const Agency = () => {
     <AgencySlider />
     {/* join kromlin */}
     <JoinKromlin />
+    {/* want to team kromlin */}
+    < WantToTeamKromlin />
     {/* Footer */}
     <Footer />
     </>
