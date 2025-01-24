@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
-import Slickslider from './Slickslider'
 import Marqueeslider from './Marqueeslider'
 
 const Heropanel = () => {
@@ -9,8 +8,6 @@ const Heropanel = () => {
   useEffect(() => {
     setAnimate(true); // Trigger the animation on mount
   }, []);
-
-  
 
   return (
     <>
