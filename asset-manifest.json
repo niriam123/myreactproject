@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myreactproject/static/css/main.41c32ec8.css",
-    "main.js": "/myreactproject/static/js/main.abe24005.js",
+    "main.css": "/myreactproject/static/css/main.bf703233.css",
+    "main.js": "/myreactproject/static/js/main.68c388a3.js",
     "static/js/453.ed3810f9.chunk.js": "/myreactproject/static/js/453.ed3810f9.chunk.js",
     "static/media/Fontspring-DEMO-proximanova-black.otf": "/myreactproject/static/media/Fontspring-DEMO-proximanova-black.500c256ebb1dea356624.otf",
     "static/media/slick.svg": "/myreactproject/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,12 +9,12 @@
     "static/media/slick.ttf": "/myreactproject/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/myreactproject/index.html",
     "static/media/slick.woff": "/myreactproject/static/media/slick.295183786cd8a1389865.woff",
-    "main.41c32ec8.css.map": "/myreactproject/static/css/main.41c32ec8.css.map",
-    "main.abe24005.js.map": "/myreactproject/static/js/main.abe24005.js.map",
+    "main.bf703233.css.map": "/myreactproject/static/css/main.bf703233.css.map",
+    "main.68c388a3.js.map": "/myreactproject/static/js/main.68c388a3.js.map",
     "453.ed3810f9.chunk.js.map": "/myreactproject/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41c32ec8.css",
-    "static/js/main.abe24005.js"
+    "static/css/main.bf703233.css",
+    "static/js/main.68c388a3.js"
   ]
 }
