@@ -146,6 +146,9 @@ span {
     width: max-content;
     cursor: pointer;
 }
+.f1 a {
+    color: #fff;
+}
 .f1:hover {
     color:rgb(130, 39, 238);
 }

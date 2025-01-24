@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className='darg-bg'>
         <div className="container container-padding">
-            <div className="columns">
+            <div className="columns is-multiline">
                 <div className="column is-display-flex is-justify-content-space-between is-flex-direction-column">
                     <div>
                         <a aria-current="page" class="" href="/en/">
@@ -22,7 +23,7 @@ const Footer = () => {
                 
                 </div>
                 <div className="column">
-                    <p className='f1'>Agency</p>
+                    <p className='f1'><Link to="/Agency">Agency</Link></p>
                     <p className='f1'>Services</p>
                     <p className='f1'>Success stories</p>
                     <p className='f1'>Careers</p>

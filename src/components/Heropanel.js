@@ -13,7 +13,7 @@ const Heropanel = () => {
     <>
         <main>
         <Navbar />
-            <div className="container">
+            <div className="wrap-container">
                 
             <div className="hero-title">
               <div className="hero-heading-container">
