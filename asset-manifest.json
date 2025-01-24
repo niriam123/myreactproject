@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/myreactproject/static/css/main.bf703233.css",
-    "main.js": "/myreactproject/static/js/main.68c388a3.js",
+    "main.css": "/myreactproject/static/css/main.823609f1.css",
+    "main.js": "/myreactproject/static/js/main.e8941014.js",
     "static/js/453.ed3810f9.chunk.js": "/myreactproject/static/js/453.ed3810f9.chunk.js",
+    "static/media/wantto_know_kromlin_bg.jpg": "/myreactproject/static/media/wantto_know_kromlin_bg.446c08240fdb98ca43c2.jpg",
     "static/media/Fontspring-DEMO-proximanova-black.otf": "/myreactproject/static/media/Fontspring-DEMO-proximanova-black.500c256ebb1dea356624.otf",
     "static/media/slick.svg": "/myreactproject/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/myreactproject/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/myreactproject/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/myreactproject/index.html",
     "static/media/slick.woff": "/myreactproject/static/media/slick.295183786cd8a1389865.woff",
-    "main.bf703233.css.map": "/myreactproject/static/css/main.bf703233.css.map",
-    "main.68c388a3.js.map": "/myreactproject/static/js/main.68c388a3.js.map",
+    "main.823609f1.css.map": "/myreactproject/static/css/main.823609f1.css.map",
+    "main.e8941014.js.map": "/myreactproject/static/js/main.e8941014.js.map",
     "453.ed3810f9.chunk.js.map": "/myreactproject/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf703233.css",
-    "static/js/main.68c388a3.js"
+    "static/css/main.823609f1.css",
+    "static/js/main.e8941014.js"
   ]
 }
