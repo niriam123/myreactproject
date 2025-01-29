@@ -22,7 +22,6 @@ const ContactUs = () => {
 
         </div>
         <img className='transparent-drop-img' src={`${process.env.PUBLIC_URL}/transparent_dropImg.png`}></img>
-
     </section>
   )
 }
