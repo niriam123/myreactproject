@@ -6,14 +6,10 @@ import { motion } from "motion/react"
 import { useInView } from "react-intersection-observer";
 
 const Services = () => {
-    const [animate, setAnimate] = useState(false);
-        
-          useEffect(() => {
-            setAnimate(true); // Trigger the animation on mount
-          }, []);
+    
           const { ref, inView } = useInView({
             triggerOnce: true, // Animation triggers only once
-            threshold: 0, // Triggers when 30% of the element is visible
+            threshold: 0, 
           });
   return (
     <>

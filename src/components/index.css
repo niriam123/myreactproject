@@ -53,7 +53,7 @@ main {
 h1 {
     font-family: "Raleway", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: min(max(34px, 11.4vw), 56px);
     color: var(--white-color);
     text-transform: initial;
@@ -414,6 +414,10 @@ span {
 }
 .hero-heading-container {
     margin: 200px 0 220px;
+    position: relative;
+}
+.home-h1 {
+    font-size: 80px;
 }
 .hero-big-blur-img {
     position: absolute;
@@ -422,8 +426,8 @@ span {
     max-width: unset;
     filter: blur(50px);
     will-change: filter;
-    top: 200px;
-    left: 0px;
+    top: -128px;
+    left: -77px;
     transform: unset;
 }
 .hero-small-blur-img {
@@ -433,8 +437,8 @@ span {
     max-width: unset;
     filter: unset;
     will-change: unset;
-    top: 280px;
-    left: 100px;
+    top: -64px;
+    left: 74px;
     transform: unset;
 }
 /* slick slider css */

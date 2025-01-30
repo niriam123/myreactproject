@@ -7,6 +7,8 @@ import Footer from './Footer';
 import AgencySlider from './AgencySlider';
 import JoinKromlin from './JoinKromlin';
 import WantToTeamKromlin from './WantToTeamKromlin';
+import { motion } from "motion/react"
+import { useInView } from "react-intersection-observer";
 
 const Agency = () => {
 
@@ -15,6 +17,10 @@ const Agency = () => {
       useEffect(() => {
         setAnimate(true); // Trigger the animation on mount
       }, []);
+      const { ref, inView } = useInView({
+        triggerOnce: true, // Animation triggers only once
+        threshold: 0, 
+      });
     
   return (
     <>
@@ -37,11 +43,23 @@ const Agency = () => {
                     <div className="hero-title">
                     <div className="hero-heading-container">
                     <div className="dashed-line"></div>
-                        <h1 className={`text h1-title padding-bottom-30 ${animate ? 'text-animate' : ''}`}>
-                        What we believe in <br></br>
-                        goes far beyond our projects
-                        </h1>
-                        <p className='white-color'>Kromin is founded on values that the whole team shares and is ready to defend.</p>
+                    <motion.h1
+                  className="h1-title padding-bottom-30"
+                  initial={{ opacity: 0, y: 250 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 1,
+                    ease: "easeOut", // Ensures a smooth easing effect
+                  }}>What we believe in <br></br> goes far beyond our projects </motion.h1>
+                        <motion.p 
+                        className="white-color h1-title padding-bottom-30"
+                        initial={{ opacity: 0, y: 80 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 1,
+                          delay: 0.4,
+                          ease: "easeOut", // Ensures a smooth easing effect
+                        }}>Kromin is founded on values that the whole team shares and is ready to defend.</motion.p>
                     </div>
                     </div>
                 </div>
@@ -51,11 +69,27 @@ const Agency = () => {
         <section className='misson-section big-section-padding'>
             <div className='columns wrap-container is-multiline'>
                 <div class="column left-side is-12">
-                  <img className='misson-img padding-bottom-60' height={210} src={`${process.env.PUBLIC_URL}/mission.svg`}></img>
+                  <motion.img className='misson-img padding-bottom-60' 
+                  initial={{ opacity: 0, x: -250 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }} 
+                transition={{
+                  duration: 1,
+                  ease: "easeOut", // Ensures a smooth easing effect
+                }}
+                  height={210} src={`${process.env.PUBLIC_URL}/mission.svg`}></motion.img>
                   <p className='p1'>Be solid Digital Partners for Companies and always create new and concrete opportunities thanks to solutions designed to engage the public and optimize profits.</p>
                 </div>
                 <div class="column right-side is-12">
-                  <img className='visson-img padding-bottom-60' height={210} src={`${process.env.PUBLIC_URL}/vision.svg`}></img>
+                  <motion.img className='visson-img padding-bottom-60'
+                  initial={{ opacity: 0, x: 250 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }} 
+                transition={{
+                  duration: 1,
+                  ease: "easeOut", // Ensures a smooth easing effect
+                }}
+                  height={210} src={`${process.env.PUBLIC_URL}/vision.svg`}></motion.img>
                   <p className='p1'>We believe in deep intuitions, those of entrepreneurs who have the guts to create 
                     new paradigms. That's why we intend to be the unstoppable 
                     link between digital transformation and the power of business ideas.</p>
@@ -67,9 +101,16 @@ const Agency = () => {
         {/* we are kromlin */}
         <section class="we-are-kromlin-section big-section-padding">
           <div class="columns is-multiline">
-            <div class="column center-div is-12">
+            <motion.div class="column center-div is-12"
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }} 
+          transition={{
+            duration: 1,
+            ease: "easeOut", // Ensures a smooth easing effect
+          }}>
                 <img className={`has-text-centered text visson-img ${animate ? 'text-animate' : ''}`} src={`${process.env.PUBLIC_URL}/we_are_kromlin_img.svg`}></img>
-            </div>
+            </motion.div>
           </div>
         </section>
         <section className='wrap-container padding-bottom-100 is-clearfix'>

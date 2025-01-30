@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
                 <div className="column">
                     <p className='f1'><Link to="/Agency">Agency</Link></p>
-                    <p className='f1'><Link to="/Services">Agency</Link></p>
+                    <p className='f1'><Link to="/Services">Services</Link></p>
                     <p className='f1'>Success stories</p>
                     <p className='f1'>Careers</p>
                     <p className='f1'>Academy</p>
