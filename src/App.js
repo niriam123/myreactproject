@@ -9,6 +9,7 @@ import './components/index.css'
 import Home from './components/Home';
 import Agency from './components/Agency';
 import Services from './components/Services';
+import Careers from './components/Careers';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />  
           <Route path="/Agency" element={<Agency />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/Careers" element={<Careers />} />
             {/* Redirect all other routes to the homepage */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

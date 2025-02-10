@@ -6,11 +6,13 @@ import { motion } from "motion/react"
 import { useInView } from "react-intersection-observer";
 
 const Services = () => {
-    
-          const { ref, inView } = useInView({
-            triggerOnce: true, // Animation triggers only once
-            threshold: 0, 
-          });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0,
+  });
   return (
     <>
       <Ballcursor />
@@ -21,7 +23,7 @@ const Services = () => {
         <div className="darg-bg">
           <div className="hero-panel wrap-container">
             <div className="hero-title">
-              <div className="">
+              <div className="hero-panel">
                 <div className="hero-dash-line"></div>
                 <motion.h1
                   className="h1-title padding-bottom-30"
@@ -31,7 +33,6 @@ const Services = () => {
                     duration: 1,
                     ease: "easeOut", // Ensures a smooth easing effect
                   }}
-
                 >
                   We know how to innovate,<br></br> we believe in ideas and<br></br> results
                 </motion.h1>

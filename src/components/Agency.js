@@ -12,6 +12,10 @@ import { useInView } from "react-intersection-observer";
 
 const Agency = () => {
 
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
     const [animate, setAnimate] = useState(false);
     
       useEffect(() => {
@@ -41,7 +45,7 @@ const Agency = () => {
             <div className='video-overlay'>
                 <div className="wrap-container video-upper-content">
                     <div className="hero-title">
-                    <div className="hero-heading-container">
+                    <div className="hero-panel">
                     <div className="dashed-line"></div>
                     <motion.h1
                   className="h1-title padding-bottom-30"
@@ -53,7 +57,7 @@ const Agency = () => {
                   }}>What we believe in <br></br> goes far beyond our projects </motion.h1>
                         <motion.p 
                         className="white-color h1-title padding-bottom-30"
-                        initial={{ opacity: 0, y: 80 }}
+                        initial={{ opacity: 0, y: 100 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
                           duration: 1,
