@@ -17,6 +17,7 @@
 body {
     font-family: "Raleway", sans-serif;
     cursor: none !important;
+    background: #fff;
 }
 section {
     position: relative;
