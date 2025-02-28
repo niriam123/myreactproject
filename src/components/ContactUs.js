@@ -5,7 +5,7 @@ const ContactUs = ({contactusTitle, contactusSubtitle, contactusBtnText}) => {
     <section className='contact-us-section purple-bg white-color'>
         <div className="container container-padding ">
             <div className="columns is-vcentered">
-                <div className="column is-6-widescreen">
+                <div className="column is-6-widescreen contact-us-content">
                     <h3 className='white-color padding-bottom-10'>{contactusTitle}</h3>
                     <p className='small white-color' dangerouslySetInnerHTML={{ __html: contactusSubtitle }}></p>
                 </div>

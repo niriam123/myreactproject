@@ -364,7 +364,6 @@ span {
     z-index: 999999;
     width: 100%;
     margin: 0 auto;
-    height: 100px;
     padding: 20px 0;
 }
 .navbar {
@@ -373,6 +372,7 @@ span {
     width: 100%;
     padding: 0 32px;
     background-color: transparent;
+    height: 100px;
 }
 .nav-menu-link {
     font-size: 14px;
@@ -780,6 +780,9 @@ li {
 
 /* responsive */
 @media (max-width:500px) {
+    br {
+        display: none;
+    }
     h1 {
         font-size: 28px;
         line-height: 1.2;
@@ -823,10 +826,33 @@ li {
     .white-btn svg {
         margin-left: 16px;
     }
+    /* navbar */
+    .navbar-menu.is-active {
+        height: 100vh;
+    }
+    .navbar-menu.is-active .nav-menu-link {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .navbar-brand, .navbar-tabs {
+        align-items: center;
+        padding: 0 20px;
+    }
+    .navbar-logo {
+        width: 140px;
+        height: 35px;
+    }
+
     /* home page */
     .hero-heading-container h1 {
         padding-top: 60px;
         padding-bottom: 20px;
+        font-size: 36px;
+    }
+    .hero-big-blur-img {
+        display: none;
     }
     .hero-small-blur-img {
         display: none;
@@ -842,6 +868,15 @@ li {
         height: 100px;
     }
 
+    /* want to stand out */
+    .sticky-content {
+        margin-bottom: 25px;
+    }
+    /* contact us */
+    .contact-us-content {
+        max-width: 320px;
+        margin: 0 auto 20px;
+    }
     /* agency */
     .video-wrapper {
         height: 400px;
@@ -877,6 +912,7 @@ li {
     .want-to-team-bg {
         height: 400px;
     }
+   
     /* our services */
     .hero-panel {
         padding: 40px 0;
@@ -910,9 +946,23 @@ li {
     }
     /* footer */
     footer {
-        padding: 0 10px;
+        padding: 0 20px;
+    }
+    footer .footer-logo {
+        width: 140px;
+        height: 35px;
+        margin-bottom: 15px;
+    }
+    footer .container-padding {
+        padding: 35px 0;
+    }
+    footer .columns .column:nth-child(2) {
+        margin-bottom: 20px;
     }
     .footer-leftpart-bottom-location-item {
         padding-bottom: 15px;
+    }
+    .footer-bottompart {
+        margin-top: 20px;
     }
 }

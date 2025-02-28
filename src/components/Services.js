@@ -1,4 +1,5 @@
 import React , {useState, useEffect} from "react"
+import { Helmet } from "react-helmet";
 import Navbar from './Navbar'
 import Ballcursor from './BallCursor'
 import Footer from './Footer'
@@ -15,6 +16,10 @@ const Services = () => {
   });
   return (
     <>
+      <Helmet>
+        <title>Services</title>
+        <meta name="description" content="This is the description of my React page." />
+      </Helmet>
       <Ballcursor />
       <Navbar />
 
