@@ -14,7 +14,7 @@ import Careers from './components/Careers';
 function App() {
   
   return (
-    <Router basename="/myreactproject">
+    <Router>
         
         <Routes>
         <Route path="/" element={<Home />} />  
