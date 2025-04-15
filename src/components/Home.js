@@ -5,6 +5,8 @@ import Heropanel from './Heropanel'
 import Wanttostand from './Wanttostand'
 import ContactUs from './ContactUs'
 import Footer from './Footer'
+import Newapi from './Newapi'
+import Calculator from './Calculator'
 
 const Home = () => {
   useEffect(() => {
@@ -20,6 +22,9 @@ const Home = () => {
       tell us about your vision." 
       contactusBtnText="Contact Us"/>
       <Footer />
+      <Newapi />
+      <Calculator />
+      <Newapi />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,18 +14,14 @@ import Careers from './components/Careers';
 function App() {
   
   return (
-    <Router>
-        
-        <Routes>
-        <Route path="/" element={<Home />} />  
-          <Route path="/Agency" element={<Agency />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/Careers" element={<Careers />} />
-            {/* Redirect all other routes to the homepage */}
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-  
-  </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Agency" element={<Agency />} />
+      <Route path="/Services" element={<Services />} />
+      <Route path="/Careers" element={<Careers />} />
+      {/* Redirect all other routes to the homepage */}
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
   );
 }
 

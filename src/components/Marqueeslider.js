@@ -1,15 +1,17 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
+import logo1 from '../assets/images/1.webp'
+import ReactPlayer from "react-player";
 
 const Marqueeslider = () => {
   return (
     <div className='marquee-container'>
       <Marquee pauseOnHover={true}>
         <div className="marquee-logo-img">
-            <img src={`${process.env.PUBLIC_URL}/1.webp`} alt='logo'></img>
+            <img src={logo1} alt='logo'></img>
         </div>
         <div className="marquee-logo-img">
-            <img src={`${process.env.PUBLIC_URL}/2.webp`} alt='logo'></img>
+            <img src={require('../assets/images/2.webp')} alt='logo'></img>
         </div>
         <div className="marquee-logo-img">
             <img src={`${process.env.PUBLIC_URL}/3.webp`} alt='logo'></img>
@@ -65,6 +67,7 @@ const Marqueeslider = () => {
             <img src={`${process.env.PUBLIC_URL}/logo9.webp`} alt='logo'></img>
         </div>
       </Marquee>
+      <ReactPlayer url='https://www.youtube.com/watch?v=T8TZQ6k4SLE' playing={false} volume={0.5} controls />
     </div>
   )
 }
