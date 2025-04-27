@@ -1,7 +1,7 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 import logo1 from '../assets/images/1.webp'
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 
 const Marqueeslider = () => {
   return (
@@ -67,7 +67,7 @@ const Marqueeslider = () => {
             <img src={`${process.env.PUBLIC_URL}/logo9.webp`} alt='logo'></img>
         </div>
       </Marquee>
-      <ReactPlayer url='https://www.youtube.com/watch?v=T8TZQ6k4SLE' playing={false} volume={0.5} controls />
+      {/* <ReactPlayer url='https://www.youtube.com/watch?v=T8TZQ6k4SLE' playing={false} volume={0.5} controls /> */}
     </div>
   )
 }
